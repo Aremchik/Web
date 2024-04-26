@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Button Content="Добавить новое резюме" Click="AddResumeButton_Click" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Width="150" />
+
+        <DataGrid x:Name="approveTable" Grid.Row="1" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата" Binding="{Binding Date}" />
+                <DataGridTextColumn Header="Имя рекрута" Binding="{Binding RecruiterName}" />
+                <DataGridHyperlinkColumn Header="Резюме" Binding="{Binding ResumeLink}" />
+                <DataGridComboBoxColumn Header="Аппрув от HR" SelectedItemBinding="{Binding HRApproval}">
+                    <DataGridComboBoxColumn.ItemsSource>
+                        <x:Array Type="{x:Type ComboBoxItem}">
+                            <ComboBoxItem Content="Аппрув" />
+                            <ComboBoxItem Content="Не аппрув" />
+                        </x:Array>
+                    </DataGridComboBoxColumn.ItemsSource>
+                </DataGridComboBoxColumn>
+                <DataGridComboBoxColumn Header="Аппрув от IT" SelectedItemBinding="{Binding ITApproval}">
+                    <DataGridComboBoxColumn.ItemsSource>
+                        <x:Array Type="{x:Type ComboBoxItem}">
+                            <ComboBoxItem Content="Аппрув" />
+                            <ComboBoxItem Content="Не аппрув" />
+                        </x:Array>
+                    </DataGridComboBoxColumn.ItemsSource>
+                </DataGridComboBoxColumn>
+                <DataGridTextColumn Header="Комментарий" Binding="{Binding Comment}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="RecruitmenSystem.Views.Authentication.Authorization"
+      Title="Authorization" av:DesignHeight="352.96" av:DesignWidth="277.6">
+
+    <Grid Background="#FFC1BEBE" Margin="0,10,28,-16">
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="22,184,0,0">
+            <TextBlock Text="Username" />
+            <TextBox x:Name="UsernameTextBox" />
+            <TextBlock Text="Password" />
+            <PasswordBox x:Name="PasswordBox" />
+            <Button Content="Authorize" Click="Authorize_Click" />
+        </StackPanel>
+    </Grid>
+</Page>

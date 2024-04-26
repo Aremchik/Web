@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfIoC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:WpfIoC.ViewModels"
+        mc:Ignorable="d"
+        Height="400" Width="600"
+        d:DataContext="{d:DesignInstance vm:MainViewModel, IsDesignTimeCreatable=True}"
+        Title="{Binding Title}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox BorderThickness="0" Background="AliceBlue" ItemsSource="{Binding PageViewModels}" SelectedItem="{Binding SelectedPageViewModel}" SelectedIndex="0" MinWidth="40">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Title}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ContentPresenter Grid.Column="1" Content="{Binding SelectedPageViewModel}"/>
+    </Grid>
+</Window>
