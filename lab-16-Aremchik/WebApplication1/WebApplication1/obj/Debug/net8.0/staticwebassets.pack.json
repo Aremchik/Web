@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\prod\\Prilo\\Labs\\lab-16-Aremchik\\WebApplication1\\WebApplication1\\wwwroot\\Page.html",
+      "PackagePath": "staticwebassets\\Page.html"
+    },
+    {
+      "Id": "D:\\prod\\Prilo\\Labs\\lab-16-Aremchik\\WebApplication1\\WebApplication1\\wwwroot\\css\\Style1.css",
+      "PackagePath": "staticwebassets\\css\\Style1.css"
+    },
+    {
+      "Id": "D:\\prod\\Prilo\\Labs\\lab-16-Aremchik\\WebApplication1\\WebApplication1\\wwwroot\\css\\Style2.css",
+      "PackagePath": "staticwebassets\\css\\Style2.css"
+    },
+    {
+      "Id": "D:\\prod\\Prilo\\Labs\\lab-16-Aremchik\\WebApplication1\\WebApplication1\\wwwroot\\js\\Script1.js",
+      "PackagePath": "staticwebassets\\js\\Script1.js"
+    },
+    {
+      "Id": "D:\\prod\\Prilo\\Labs\\lab-16-Aremchik\\WebApplication1\\WebApplication1\\wwwroot\\js\\Script2.js",
+      "PackagePath": "staticwebassets\\js\\Script2.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WebApplication1.props",
+      "PackagePath": "build\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApplication1.props",
+      "PackagePath": "buildMultiTargeting\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WebApplication1.props",
+      "PackagePath": "buildTransitive\\WebApplication1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
